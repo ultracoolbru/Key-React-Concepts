@@ -1,9 +1,10 @@
 import Concept from "./Concept";
 
 export default function Concepts(props) {
+  const concepts = [...props.concepts];
   return (
     <ul id="concepts">
-      {props.concepts.map((concept) => (
+      {concepts.map((concept) => (
         <Concept concept={concept} />
       ))}
     </ul>
